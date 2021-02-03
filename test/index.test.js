@@ -22,7 +22,7 @@ describe('object_set', () => {
     set(srcObj, ['b', 'b', 'a'], 'a');
     assert.equal(JSON.stringify(srcObj), JSON.stringify(estObj));
   });
-  it('create returnvalue check', () => {
+  it('create return value check', () => {
     let estObj = {b: {b: {a: 'a'}}};
     let srcObj = set({}, ['b', 'b', 'a'], 'a');
     assert.equal(JSON.stringify(srcObj), JSON.stringify(estObj));
